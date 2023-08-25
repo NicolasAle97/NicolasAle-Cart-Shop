@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Carrito de Compras • Discos de Musica</title>
+		<script src="./js/app.js" defer></script>
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			.shadow {
+				box-shadow: 1px 0px 21px 0px #adadadbf;
+			}
+			.bg-card {
+				background: #0d0d0d;
+			}
+			.text-color {
+				color: #eab919;
+			}
+			.bg-color {
+				background: #eab919;
+				color: #000000;
+			}
+			.btn-color {
+				background: #eab919;
+				color: #ffffff;
+			}
+			.btn-color:hover {
+				background: #c49b14;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body class="bg-dark">
+		<main class="container mt-5">
+			<div class="row text-center">
+				<article class="col-sm-4 mb-3">
+					<div class="card shadow bg-card">
+						<div class="card-body shadow">
+							<img src="./img/post-malone.png" class="rounded" width="200px" />
+							<h5 class="card-title text-color my-3">Post Malone • Beerbongs & Bentleys</h5>
+							<button
+								class="btn btn-color"
+								data-img="./img/post-malone.png"
+								data-disco="Post Malone • Beerbongs & Bentleys"
+							>
+								Agregar
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-4 mb-3">
+					<div class="card shadow bg-card">
+						<div class="card-body">
+							<img src="./img/dua-lipa.png" class="rounded" width="200px" />
+							<h5 class="card-title text-color my-3">Dua Lipa • Future Nostalgia</h5>
+							<button
+								class="btn btn-color"
+								data-img="./img/dua-lipa.png"
+								data-disco="Dua Lipa • Future Nostalgia"
+							>
+								Agregar
+							</button>
+						</div>
+					</div>
+				</article>
+				<article class="col-sm-4 mb-3">
+					<div class="card shadow bg-card">
+						<div class="card-body">
+							<img src="./img/soda-stereo.png" class="rounded" width="200px" />
+							<h5 class="card-title text-color my-3">Soda Stereo • Soda Stereo</h5>
+							<button
+								class="btn btn-color"
+								data-img="./img/soda-stereo.png"
+								data-disco="Soda Stereo • Soda Stereo"
+							>
+								Agregar
+							</button>
+						</div>
+					</div>
+				</article>
+			</div>
+		</main>
+
+		<section class="container mt-3">
+			<ul id="carrito" class="border ps-0">
+				<!-- aqui van los template -->
+			</ul>
+		</section>
+
+		<template id="template">
+			<li
+				class="bg-card p-2 w-100 list-group-item d-flex justify-content-between align-items-center"
+			>
+				<div>
+					<img src="#" class="img-fluid" width="50px" />
+					<span class="lead text-color ms-2 fw-bold">Disco</span>
+				</div>
+				<div>
+					<span class="badge bg-color rounded-pill">1</span>
+				</div>
+			</li>
+		</template>
+
+		<script src="./js/app.js"></script>
+	</body>
+</html>
